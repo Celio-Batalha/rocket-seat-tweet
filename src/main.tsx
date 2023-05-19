@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './global.css'
-import { House, Hash, Bell, EnvelopeSimple, BookmarkSimple } from '@phosphor-icons/react'
+import { House, Hash, Bell, EnvelopeSimple, BookmarkSimple, User, DotsThreeCircle, FileText, Sparkle } from '@phosphor-icons/react'
 
 import twitterLogo from './assets/logo-twitter.svg'
 
@@ -12,20 +12,26 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <img className="logo" src={twitterLogo} alt="Logo" />
 
           <nav className="main-navigation">
-            <a href=""><House /> Home</a>
+            <a className="active" href=""><House weight="fill" /> Home</a>
             <a href=""><Hash /> Explore</a>
             <a href=""><Bell /> Notifications</a>
             <a href=""><EnvelopeSimple /> Messages</a>
             <a href=""><BookmarkSimple /> Bookmarks</a>
-            <a href="">Lists</a>
-            <a href="">Profile</a>
-            <a href="">More</a>
+            <a href=""><FileText /> Lists</a>
+            <a href=""><User /> Profile</a>
+            <a href=""><DotsThreeCircle /> More</a>
           </nav>
-
           <button className="new-tweet">Tweet</button>
         </aside>
         <div className="content">
-          content
+          <main className="timeline">
+            <div className="timeline-header">
+              Home
+              <Sparkle />
+            </div>
+
+            <form className="new-tweet-form" action=""></form>
+          </main>
         </div>
       </div>
   </React.StrictMode>
