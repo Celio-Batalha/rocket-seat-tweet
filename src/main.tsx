@@ -30,7 +30,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
               <Sparkle />
             </div>
 
-            <form className="new-tweet-form" action=""></form>
+            <form className="new-tweet-form" action="">
+              <label htmlFor=""></label>
+            </form>
           </main>
         </div>
       </div>
